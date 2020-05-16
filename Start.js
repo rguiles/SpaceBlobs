@@ -38,7 +38,7 @@ class Start extends Phaser.Scene {
             frameHeight: 32
         });
 
-
+        this.load.image('title', 'assets/font/title1.png')
         this.load.image('bg', 'assets/leveldesign/bg.png');
         this.load.image('bg2', 'assets/leveldesign/blackBackground.png');
         this.load.image('simBg', 'assets/leveldesign/simBg.png');
@@ -102,6 +102,8 @@ class Start extends Phaser.Scene {
         this.background.setOrigin(0,0);
         music.play(this.musicConfig);
 
+        this.add.image(this.game.config.width/2,this.game.config.height/4,'title');
+
         this.anims.create({
             key: 'startBtn',
             frames: this.anims.generateFrameNumbers('startButton'),
@@ -124,7 +126,7 @@ class Start extends Phaser.Scene {
         });
 
         //Start Button
-        this.startBtn = this.add.sprite(this.game.config.width/2, this.game.config.height/2.5, 'startButton').setScale(3);
+        this.startBtn = this.add.sprite(this.game.config.width/2, this.game.config.height/1.8, 'startButton').setScale(3);
         this.startBtn.on('pointerover', function() {
             this.startBtn.play('startBtn')}, 
             this
@@ -140,7 +142,7 @@ class Start extends Phaser.Scene {
         );
 
         //Settings Button
-        this.settingsBtn = this.add.sprite(this.game.config.width/2, this.game.config.height/2, 'settingsButton').setScale(2.5).setInteractive();
+        this.settingsBtn = this.add.sprite(this.game.config.width/2, this.game.config.height/1.5, 'settingsButton').setScale(2.5).setInteractive();
         this.settingsBtn.on('pointerover', function() {
             this.settingsBtn.play('settingsBtn')}, 
             this
