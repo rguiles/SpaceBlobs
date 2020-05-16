@@ -69,7 +69,7 @@ class Start extends Phaser.Scene {
         this.load.bitmapFont('font', 'assets/font/font_0.png', 'assets/font/font.fnt');
 
         // Preload enemies in this scene to be used in later scenes
-        this.load.image('enemy1_idle', 'assets/enemy1.png');
+        this.load.image('enemy1_idle', 'assets/enemies/Blob1.png');
         //Spawning pics for animation 
         this.load.image('spawn1', 'assets/effects/spwn1.png')
         this.load.image('spawn2', 'assets/effects/spwn2.png')
