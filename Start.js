@@ -119,7 +119,7 @@ class Start extends Phaser.Scene {
         this.background.setOrigin(0,0);
         music.play(this.musicConfig);
 
-        this.add.image(this.game.config.width/2,this.game.config.height/4,'title');
+        this.add.image(this.game.config.width/2+20,this.game.config.height/4,'title');
 
         this.anims.create({
             key: 'startBtn',

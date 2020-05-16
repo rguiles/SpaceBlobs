@@ -95,8 +95,8 @@ class Lvl1 extends Phaser.Scene {
         if(health <= 0) {
             this.gameOverCam.fade(1000);
             health = 0; 
-            this.scene.launch('GameOver');
             this.scene.stop();
+            this.scene.launch('GameOver');
         }
 
         for(var i = 0; i < keyObjs.length; i++) {
