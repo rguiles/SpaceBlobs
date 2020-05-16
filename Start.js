@@ -22,8 +22,9 @@ class Start extends Phaser.Scene {
         this.load.audio('beam', 'assets/soundEffects/beam.mp3');
         this.load.audio('spawnSoundEffect', 'assets/soundEffects/spawn.mp3');
         this.load.audio('robotSoundEffect', 'assets/soundEffects/robotSpeaking.mp3');
-        this.load.audio('lvl1Music', 'assets/soundEffects/lvl1Music.mp3')
-        this.load.audio('lvl2Music', 'assets/soundEffects/lvl2Music.mp3')
+        this.load.audio('lvl1Music', 'assets/soundEffects/lvl1Music.mp3');
+        this.load.audio('lvl2Music', 'assets/soundEffects/lvl2Music.mp3');
+        this.load.audio('goMusic', 'assets/soundEffects/lvl2Music.mp3');
 
         this.load.spritesheet("startButton", 'assets/png/startBtn.png', {
             frameWidth: 64,
@@ -68,8 +69,24 @@ class Start extends Phaser.Scene {
 
         this.load.bitmapFont('font', 'assets/font/font_0.png', 'assets/font/font.fnt');
 
-        // Preload enemies in this scene to be used in later scenes
+        // Preload images in this scene to be used in later scenes
         this.load.image('enemy1_idle', 'assets/enemies/Blob1.png');
+        this.load.image('gameover1', 'assets/font/gameover1.png');
+        this.load.image('gameover2', 'assets/font/gameover2.png');
+        this.load.image('gobackground', 'assets/leveldesign/bg2.png');
+        this.load.image('spacering', 'assets/leveldesign/spaceRing.png');
+
+        this.load.image('dead1', 'assets/png/Dead (1).png');
+        this.load.image('dead2', 'assets/png/Dead (2).png');
+        this.load.image('dead3', 'assets/png/Dead (3).png');
+        this.load.image('dead4', 'assets/png/Dead (4).png');
+        this.load.image('dead5', 'assets/png/Dead (5).png');
+        this.load.image('dead6', 'assets/png/Dead (6).png');
+        this.load.image('dead7', 'assets/png/Dead (7).png');
+        this.load.image('dead8', 'assets/png/Dead (8).png');
+        this.load.image('dead9', 'assets/png/Dead (9).png');
+        this.load.image('dead10', 'assets/png/Dead (10).png');
+
         //Spawning pics for animation 
         this.load.image('spawn1', 'assets/effects/spwn1.png')
         this.load.image('spawn2', 'assets/effects/spwn2.png')
