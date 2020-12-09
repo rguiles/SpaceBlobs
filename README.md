@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BlobBots
 Software Engineering group project for Sping 2020.
 
@@ -21,3 +22,8 @@ Serving HTTP on :: port # (http://[::]:#/) ...
 This will allow you to create a server from your localhost on your browser. All you will need to do next is open up 
 your broswer and type in "localhost:port#" into the url bar. Make sure to replace "port#" with the number you see when you run the code. 
   
+=======
+BLOB BOTS
+
+Software Engineering group project for Spring 2020.
+>>>>>>> 951cd00346b154985527bdc8cbdc600e0485c4c0
